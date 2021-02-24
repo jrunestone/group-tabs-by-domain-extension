@@ -1,0 +1,24 @@
+{
+    "name": "Group tabs by domain",
+    "version": "1.0",
+    "description": "Groups tabs by their top domain name",
+    "manifest_version": 2,
+    "background": {
+        "persistent": false,
+        "scripts": ["./main.js"]
+    },
+    "commands": {
+        "group-tabs": {
+          "suggested_key": { "default": "Alt+Shift+P" },
+          "description": "Group tabs by domain"
+        },
+
+        "ungroup-tabs": {
+            "suggested_key": { "default": "Alt+Shift+O" },
+            "description": "Ungroup all tabs"
+          }
+      },
+    "permissions": [
+        "tabs"
+    ]
+}
